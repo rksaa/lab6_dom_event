@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="stylesheet" href="miniproject.css">
+  <!-- Tanpa atribut defer -->
+<script src="miniproject.js"defer></script>
+</head>
+<body>
+    <!-- Tombol toggle dan paragraf (Eksperimen Mandiri No. 4) -->
+
+<p id="paragrafInfo">Selamat datang di workshop pemrograman web! Silakan isi form di bawah ini.</p>
+
+  <h2>Form Pendaftaran Workshop</h2>
+
+  <form id="formWorkshop" novalidate>
+    <div class="form-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" maxlength="40">
+      <p>Jumlah karakter: <span id="jumlahKarakterNama">0</span>/40</p>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="sesi">Pilihan Sesi Workshop</label>
+      <select id="sesi">
+        <option value="">-- Pilih Sesi --</option>
+        <option value="Front-End Web Development">Front-End Web Development</option>
+        <option value="Back-End & API Integration">Back-End & API Integration</option>
+        <option value="UI/UX Design & Prototyping">UI/UX Design & Prototyping</option>
+      </select>
+      <p id="pesanSesi">Sesi dipilih: <i>Belum ada sesi dipilih</i></p>
+    </div>
+
+    <button type="submit" id="btnDaftar">Daftar Workshop</button>
+    <button type="button" id="btnReset">Reset Form</button>
+  </form>
+
+  <p id="pesanFeedback" aria-live="polite"></p>
+
+</body>
+</html>
+
+<button id="btnToggleParagraf" type="button">Sembunyikan Informasi</button>

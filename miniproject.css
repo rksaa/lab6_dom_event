@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+  color: #173f75;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.counter {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #3478c8;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #173f75;
+}
+
+#btnReset {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+#btnReset:hover {
+  background-color: #cccccc;
+}
+
+.pesan-box {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 4px;
+  display: none;
+}
+
+.pesan-box.error {
+  display: block;
+  background-color: #ffe6e6;
+  color: #d9534f;
+  border: 1px solid #f5c6cb;
+}
+
+.pesan-box.sukses {
+  display: block;
+  background-color: #e6f1ff;
+  color: #173f75;
+  border-left: 4px solid #3478c8;
+}
+
+
+/* Class CSS untuk menyembunyikan elemen (Eksperimen Mandiri No. 4) */
+.sembunyi {
+  display: none;
+}
